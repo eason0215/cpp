@@ -1,6 +1,24 @@
 #include<iostream>
 #include<cmath>
 using namespace std;
+
+int bubbleSort(float arr[], int n) 
+{
+	int i, j;
+	for (i = 0; i < n-1; i++) 
+	{
+		for (j = 0; j < n-i-1; j++) 
+		{
+			if (arr[j] > arr[j+1]) 
+			{
+				float temp = arr[j];
+				arr[j] = arr[j+1];
+				arr[j+1] = temp;
+			}
+		}
+	}
+	return 0;
+}
 int main()
 {
 	int n,a=1;
