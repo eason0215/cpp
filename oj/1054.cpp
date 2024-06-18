@@ -7,7 +7,7 @@ int main()
 	cin>>a;
 	while(b<=a)
 	{
-		total=total+pow(b,2)
+		total=total+pow(b,2);
 		b++;
 	}
 	cout<<total;
